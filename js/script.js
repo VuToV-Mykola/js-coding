@@ -1,6 +1,17 @@
 console.log('JavaScript is awesome'.length);
 console.log('JavaScript is awesome'.toUpperCase());
 console.log('HELLO');
-сonsole.log();
-const l = 25;
-console.log('🚀 ~ file: script.js ~ line 6 ~ l', l);
+console.log(Number.MAX_VALUE(20, 30, 78, 12));
+const Prod = 25;
+console.log(`🚀  ~ Prod`, Prod);
+/**
+ * 
+ * 
+ */
+
+
+{
+  {
+    [9];
+  }
+}
