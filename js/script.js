@@ -1,17 +1,8 @@
-console.log('JavaScript is awesome'.length);
-console.log('JavaScript is awesome'.toUpperCase());
-console.log('HELLO');
-console.log(Number.MAX_VALUE(20, 30, 78, 12));
-const Prod = 25;
-console.log(`🚀  ~ Prod`, Prod);
-/**
- * 
- * 
- */
+// <keyword> <variable name> = <value>
+// Announcement of a variable begins with a key word const.Such a variable must be immediately initialized by the value, after which it cannot be overridden.
 
-
-{
-  {
-    [9];
-  }
-}
+const age = 20;
+const userName = 'Mango';
+const socialProfileTag = '@gluck';
+const totalWorkSalary = 4052;
+const facebookProfile = 'Mykola Vutov';
