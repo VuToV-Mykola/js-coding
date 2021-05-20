@@ -14,7 +14,7 @@ console.log(`🚀  ~ totalWorkSalary`, totalWorkSalary);
 const Profile = 'Mykola Vutov';
 console.log(`🚀  ~ Profile`, Profile);
 
-// The task
+// The task 1
 // Announce two variables, ProductName for the name of the goods and pricePeritem for storing prices apiece.When declared, the following characteristics of the goods assign the following characteristics:
 
 // Title - Row "Droid"
@@ -68,3 +68,9 @@ const description = 'JavaScript essentials';
 console.log(`🚀  ~ description`, description);
 
 //Boolean
+
+const isModalOpen = true;
+console.log(`🚀  ~ isModalOpen`, isModalOpen);
+
+const isLoggedIn = false;
+console.log(`🚀  ~ isLoggedIn`, isLoggedIn);
