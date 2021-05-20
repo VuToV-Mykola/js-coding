@@ -74,3 +74,30 @@ console.log(`🚀  ~ isModalOpen`, isModalOpen);
 
 const isLoggedIn = false;
 console.log(`🚀  ~ isLoggedIn`, isLoggedIn);
+
+// The task 3
+// Announce the following variables using the Const or Let keyword and the appropriate values assign them.
+
+// TopSpeed - number 160.
+// Distance - number 617.54.
+// Login - string "Mango935".
+// isOnline - Boolean True.
+// isAdmin - False Boolean.
+
+const topSpeed = 160;
+console.log(`🚀  ~ topSpeed`, topSpeed);
+const distance = 617.54;
+console.log(`🚀  ~ distance`, distance);
+const login = 'Mango935';
+console.log(`🚀  ~ login`, login);
+const isOnline = true;
+console.log(`🚀  ~ isOnline`, isOnline);
+const isAdmin = false;
+console.log(`🚀  ~ isAdmin`, isAdmin);
+
+// Mathematical operators
+
+const x = 10;
+const y = 5;
+
+// Addition
