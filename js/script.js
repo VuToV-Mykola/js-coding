@@ -1,6 +1,8 @@
+//Variables
 // <keyword> <variable name> = <value>
 // Announcement of a variable begins with a key word const.Such a variable must be immediately initialized by the value, after which it cannot be overridden.
 
+//CONST
 const age = 20;
 console.log(`🚀  ~ age`, age);
 const userName = 'Mango';
@@ -11,3 +13,58 @@ const totalWorkSalary = 4052;
 console.log(`🚀  ~ totalWorkSalary`, totalWorkSalary);
 const Profile = 'Mykola Vutov';
 console.log(`🚀  ~ Profile`, Profile);
+
+// The task
+// Announce two variables, ProductName for the name of the goods and pricePeritem for storing prices apiece.When declared, the following characteristics of the goods assign the following characteristics:
+
+// Title - Row "Droid"
+// PRICE PRICE - Number 2000
+const productName = 'Droid';
+console.log(`🚀  ~ productName`, productName);
+const pricePerItem = 2000;
+console.log(`🚀  ~ pricePerItem`, pricePerItem);
+
+//LET
+let age = 5;
+age = 10;
+console.log(`🚀  ~ age`, age);
+
+let userName = 'Mango';
+userName = 'Poly';
+console.log(`🚀  ~ userName`, userName);
+
+// ❌
+age = 15; // ReferenceError: Cannot access 'age' before initialization
+console.log(age); // ReferenceError: age is not defined
+
+// The task 2
+// The name of the goods has changed to Repair Droid and increased its price by 1500 credits.Redefined the values of the values of PricePeritem and ProductName after their ad.
+let pricePerItem = 2000;
+console.log(`🚀  ~ pricePerItem`, pricePerItem);
+
+pricePerItem += 1500;
+console.log(`🚀  ~ pricePerItem`, pricePerItem);
+
+let productName = 'Droid';
+console.log(`🚀  ~ productName`, productName);
+
+productName = 'Repair droid';
+console.log(`🚀  ~ productName`, productName);
+
+//Primitive Types (numbers, string, boolean)
+
+// Number;
+const age = 20;
+console.log(`🚀  ~ age`, age);
+
+const salary = 3710.84;
+console.log(`🚀  ~ salary`, salary);
+
+//String
+const name = 'Mango';
+console.log(`🚀  ~ name`, name);
+
+const description = 'JavaScript essentials';
+console.log(`🚀  ~ description`, description);
+
+//Boolean
