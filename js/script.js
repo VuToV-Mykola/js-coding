@@ -186,3 +186,16 @@ function sayHi() {
   console.log('Hello, this is my first function!');
 }
 sayHi();
+
+// Parameters and arguments
+
+// 1. Announcement of parameters x, y, z
+function multiply(x, y, z) {
+  console.log(`The result of multiplication is equal ${x * y * z}`);
+}
+
+// 2. Transfer of arguments
+
+multiply(2, 3, 5); //30
+multiply(4, 8, 12); //384
+multiply(17, 6, 25); //2550
