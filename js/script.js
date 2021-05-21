@@ -228,7 +228,23 @@ let result = multiply(2, 3, 5);
 console.log(`🚀  ~ result`, result); //30
 
 result = multiply(4, 8, 12);
-console.log(`🚀  ~ result`, result);
+console.log(`🚀  ~ result`, result); //384
 
 result = multiply(17, 6, 25);
-console.log(`🚀  ~ result`, result);
+console.log(`🚀  ~ result`, result); //2550
+//!!!!
+// The RETURN statement without explicitly specified value returns a special value undefined.In the absence of Return in the body of the function, it will still return undefined.
+//!!!!
+
+// The task 9
+// Support code of the Add function so that it returns the result of the addition of the values of three parameters A, B and C.
+
+function add(a, b, c) {
+  return a + b + c;
+}
+
+add(2, 5, 8); // 15
+
+console.log(add(15, 27, 10)); //52
+console.log(add(10, 20, 30)); //60
+console.log(add(5, 10, 15)); //30
