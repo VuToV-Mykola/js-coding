@@ -113,3 +113,13 @@ console.log(x * y); //50
 
 // Division
 console.log(x / y); //2
+
+// The task 4
+// Support code, assigning a TotalPrice variable an expression for calculating the total amount of the order.The pricePeriteM variable stores the price of one unit of goods, and orderedQuantity is the number of units of goods in order.
+
+const pricePerItem = 3500;
+console.log(`🚀  ~ pricePerItem`, pricePerItem);
+const orderedQuantity = 4;
+console.log(`🚀  ~ orderedQuantity`, orderedQuantity);
+const totalPrice = pricePerItem * orderedQuantity;
+console.log(`🚀  ~ totalPrice`, totalPrice);
