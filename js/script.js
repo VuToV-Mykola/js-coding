@@ -98,6 +98,18 @@ console.log(`🚀  ~ isAdmin`, isAdmin);
 // Mathematical operators
 
 const x = 10;
+console.log(`🚀  ~ x`, x);
 const y = 5;
+console.log(`🚀  ~ y`, y);
 
 // Addition
+console.log(x + y); //15
+
+// Subtraction
+console.log(x - y); //5
+
+// Multiplication
+console.log(x * y); //50
+
+// Division
+console.log(x / y); //2
