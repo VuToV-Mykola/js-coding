@@ -199,3 +199,16 @@ function multiply(x, y, z) {
 multiply(2, 3, 5); //30
 multiply(4, 8, 12); //384
 multiply(17, 6, 25); //2550
+
+// The task 8
+// The Add function should be able to add three numbers and output the result in the console.Add Add functions Three parameters A, B and C that will receive the values of the arguments when it is called.
+
+// Additional Console.log () so that it logs in a string "ADDITION RESULT EQUALS <RESULT>", where <result> is the sum of the transmitted numbers.
+
+function add(a, b, c) {
+  console.log(`Addition result equals ${a + b + c}`);
+}
+
+add(15, 27, 10);
+add(10, 20, 30);
+add(5, 10, 15);
