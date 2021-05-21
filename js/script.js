@@ -129,7 +129,7 @@ const questName = 'Mango';
 console.log(`🚀  ~ questName`, questName);
 const roomNumber = 207;
 console.log(`🚀  ~ roomNumber`, roomNumber);
-const greeting = `Welcome $ {GuestName}, you are set in the roomnumber $ {roomNumber}`;
+const greeting = `Welcome $ {GuestName}, you are set in the room Number $ {roomNumber}`;
 console.log(`🚀  ~ greeting`, greeting);
 
 // The task 5
@@ -142,4 +142,28 @@ const pricePerItem = 3500;
 console.log(`🚀  ~ pricePerItem`, pricePerItem);
 
 const message = `You picked ${productName}, price per item is ${pricePerItem} credits`;
+console.log(`🚀  ~ message`, message);
+
+// The task 6
+// The store for the sale of repair droids is ready to open, it remains to write a script for their order.We declare variables and assign them the corresponding values:
+
+// PricePerDroid - the price of one droid, value of 800
+// OrderedQuantity - the number of droids in order, value 6
+// DeliveryFee - shipping cost, value 50
+// TotalPrice - the total amount of the order for payment, do not forget about the cost of delivery
+// Message - message about the status of the order in the format "You Ordered Droids Worth <Total Price> Credits. Delivery (<Delivery Fee> Credits) is included in total Price."
+
+const orderedQuantity = 6;
+console.log(`🚀  ~ orderedQuantity`, orderedQuantity);
+
+const pricePerDroid = 800;
+console.log(`🚀  ~ pricePerDroid`, pricePerDroid);
+
+const deliveryFee = 50;
+console.log(`🚀  ~ deliveryFee`, deliveryFee);
+
+const totalPrice = pricePerDroid * orderedQuantity + deliveryFee;
+console.log(`🚀  ~ totalPrice`, totalPrice);
+
+const message = `You ordered droids worth ${totalPrice} credits. Delivery (${deliveryFee} credits) is included in total price.`;
 console.log(`🚀  ~ message`, message);
