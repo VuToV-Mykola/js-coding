@@ -167,3 +167,22 @@ console.log(`🚀  ~ totalPrice`, totalPrice);
 
 const message = `You ordered droids worth ${totalPrice} credits. Delivery (${deliveryFee} credits) is included in total price.`;
 console.log(`🚀  ~ message`, message);
+
+//FUNCTION
+// 1. AnnouncementOfTheMultiplyFunction
+function multiply() {
+  //Body function
+  console.log('multiply function invocation');
+}
+// 2. Calls Multiply features
+multiply(); // multiply function invocation
+multiply(); // multiply function invocation
+multiply(); // multiply function invocation
+
+// The task 7
+// Announce the Say hi function, inside which add console.log () with a string "Hello, This Is My First Function!".After calling the Say hi function
+
+function sayHi() {
+  console.log('Hello, this is my first function!');
+}
+sayHi();
