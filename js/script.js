@@ -212,3 +212,23 @@ function add(a, b, c) {
 add(15, 27, 10);
 add(10, 20, 30);
 add(5, 10, 15);
+
+//Return value
+
+function multiply(x, y, z) {
+  console.log('Code to Return is performed as usual');
+  // Return the result of multiplication expression
+  return x * y * z;
+
+  console.log('This log will never be completed, it stands after Return');
+}
+
+// The result of the function can be saved to the variable
+let result = multiply(2, 3, 5);
+console.log(`🚀  ~ result`, result); //30
+
+result = multiply(4, 8, 12);
+console.log(`🚀  ~ result`, result);
+
+result = multiply(17, 6, 25);
+console.log(`🚀  ~ result`, result);
