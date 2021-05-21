@@ -129,5 +129,17 @@ const questName = 'Mango';
 console.log(`🚀  ~ questName`, questName);
 const roomNumber = 207;
 console.log(`🚀  ~ roomNumber`, roomNumber);
-const greeting = `Добро пожаловать ${guestName}, вы поселены в номер ${roomNumber}`;
+const greeting = `Welcome $ {GuestName}, you are set in the roomnumber $ {roomNumber}`;
 console.log(`🚀  ~ greeting`, greeting);
+
+// The task 5
+// Announce a variable message and write a purchase message, a string in format: "You Picked <product name>, Price per item is <product price> Credits."Where <product name> and <product price> are the values of the ProductName and PricePeritem variables.Use the syntax of template strings.
+
+const productName = 'Droid';
+console.log(`🚀  ~ productName`, productName);
+
+const pricePerItem = 3500;
+console.log(`🚀  ~ pricePerItem`, pricePerItem);
+
+const message = `You picked ${productName}, price per item is ${pricePerItem} credits`;
+console.log(`🚀  ~ message`, message);
