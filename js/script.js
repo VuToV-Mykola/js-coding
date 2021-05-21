@@ -115,7 +115,7 @@ console.log(x * y); //50
 console.log(x / y); //2
 
 // The task 4
-// Support code, assigning a TotalPrice variable an expression for calculating the total amount of the order.The pricePeriteM variable stores the price of one unit of goods, and orderedQuantity is the number of units of goods in order.
+// Support code, assigning a TotalPrice variable an expression for calculating the total amount of the order.The pricePerItem variable stores the price of one unit of goods, and orderedQuantity is the number of units of goods in order.
 
 const pricePerItem = 3500;
 console.log(`🚀  ~ pricePerItem`, pricePerItem);
@@ -123,3 +123,11 @@ const orderedQuantity = 4;
 console.log(`🚀  ~ orderedQuantity`, orderedQuantity);
 const totalPrice = pricePerItem * orderedQuantity;
 console.log(`🚀  ~ totalPrice`, totalPrice);
+
+// Pattern strings
+const questName = 'Mango';
+console.log(`🚀  ~ questName`, questName);
+const roomNumber = 207;
+console.log(`🚀  ~ roomNumber`, roomNumber);
+const greeting = `Добро пожаловать ${guestName}, вы поселены в номер ${roomNumber}`;
+console.log(`🚀  ~ greeting`, greeting);
