@@ -288,3 +288,18 @@ calculateTotalPrice(8, 60); //480
 calculateTotalPrice(3, 400); //1200
 calculateTotalPrice(1, 3500); //3500
 calculateTotalPrice(12, 70); //840
+
+// The task 12
+// The MakeOrDerMessage (OrderedQuantity, PricePerDroid, DeliveryFee) features and returns a message about the purchase of repair droids.It declares three parameters whose values will be set during its call.
+
+// OrderedQuantity - the number of droids in order
+// PricePerDroid - the price of one droid
+// DeliveryFee - shipping cost
+// Complete function code so that it returns a message about the order in the format "You Ordered Droids Worth <Total Price> Credits. Delivery (<Delivery Fee> Credits) is included in total Price.".Do not forget about the delivery price when calculating the total cost.
+
+function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
+  const totalPrice = orderedQuantity * pricePerDroid + deliveryFee;
+  const message = `You ordered droids worth ${totalPrice} credits. Delivery (${deliveryFee} credits) is included in total price.`;
+
+  return message;
+}
