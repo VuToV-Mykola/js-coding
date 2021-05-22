@@ -269,3 +269,22 @@ makeMessage('Scanner', 3500); //"You picked Scanner, price per item is 3500 cred
 makeMessage('Reactor', 8000); //"You picked Reactor, price per item is 8000 credits"
 
 makeMessage('Engine', 4070); //"You picked Engine, price per item is 4070 credits"
+
+// The task 11
+// The CalculateTotalPrice feature considers and returns the total purchase amount.It takes two parameters whose values will be set during its call.
+
+// OrderedQantity - the number of goods in the order;
+// PricePeritem - the price of one unit of goods.
+// An optional function code so that the total purchase amount is recorded in the TotalPrice variable, the result of multiplication of the number of goods on the price of one.
+
+function calculateTotalPrice(orderedQuantity, pricePerItem) {
+  const totalPrice = orderedQuantity * pricePerItem;
+
+  return totalPrice;
+}
+
+calculateTotalPrice(5, 100); //500
+calculateTotalPrice(8, 60); //480
+calculateTotalPrice(3, 400); //1200
+calculateTotalPrice(1, 3500); //3500
+calculateTotalPrice(12, 70); //840
