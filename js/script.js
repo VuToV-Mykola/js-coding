@@ -248,3 +248,24 @@ add(2, 5, 8); // 15
 console.log(add(15, 27, 10)); //52
 console.log(add(10, 20, 30)); //60
 console.log(add(5, 10, 15)); //30
+
+//The task 10
+// The MakeMessage (Name, Price) feature is and returns a purchase message.It declares two parameters whose values will be set during its call.
+
+// Name - product name
+// Price - price of goods
+// Add function code so that in the MESSAGE variable recorded the string "You Picked <Product Name> Price PER Item IS <Product Price> Credits", where <Product Name> and <Product Price> These are the values of the Name and Price Parameters.Use the syntax of template strings.
+
+function makeMessage(name, price) {
+  const message = `You picked ${name}, price per item is ${price} credits`;
+
+  return message;
+}
+
+makeMessage('Radar', 6150); //"You picked Radar, price per item is 6150 credits"
+
+makeMessage('Scanner', 3500); //"You picked Scanner, price per item is 3500 credits"
+
+makeMessage('Reactor', 8000); //"You picked Reactor, price per item is 8000 credits"
+
+makeMessage('Engine', 4070); //"You picked Engine, price per item is 4070 credits"
