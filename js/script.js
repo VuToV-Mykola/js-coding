@@ -324,3 +324,35 @@ isAdult(20); //true
 isAdult(14); //false
 isAdult(8); //false
 isAdult(37); //true
+
+// Comparison operators === and! ==
+// ❌ Bad, the type of types is performed
+console.log(5 == '5'); // true
+console.log(5 != '5'); // false
+console.log(1 == true); // true
+console.log(1 != true); // false
+
+// ✅ Well, the type of types is not executed
+console.log(5 === '5'); // false
+console.log(5 === 5); // true
+console.log(5 !== '5'); // true
+console.log(5 !== 5); // false
+console.log(1 === true); // false
+console.log(1 !== true); // true
+
+// Task 14.
+// The isValidPassword(password) feature checks the equality of saved and entered by passwords and returns the check result - the Bul True or False.The savedPassword variable stores the value of the previously saved password.Entered password is transmitted to the Password parameter.
+
+// Navigating the IsMATCH variable Expression of the equality of the equality of the entered and previously saved passwords.The result of the scan expression must be true if the values match, and false, if not
+
+function isValidPassword(password) {
+  const savedPassword = 'jqueryismyjam';
+  // Change code below this line
+  const isMatch = password === savedPassword;
+
+  // Change code above this line
+  return isMatch;
+}
+isValidPassword('mangodab3st'); // false
+isValidPassword('kiwirul3z'); // false
+sValidPassword('jqueryismyjam'); // true
