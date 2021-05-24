@@ -356,3 +356,36 @@ function isValidPassword(password) {
 isValidPassword('mangodab3st'); // false
 isValidPassword('kiwirul3z'); // false
 sValidPassword('jqueryismyjam'); // true
+
+// Instruction IF ... else
+if (condition) {
+  // Body if.
+} else {
+  // Body ELSE.
+}
+
+let coast;
+const subscription = 'pro';
+
+if (subscription === 'pro') {
+  coast = 100;
+} else {
+  coast = 0;
+}
+console.log(coast); //100
+
+let coast;
+const subscription = 'free';
+
+if (subscription === 'pro') {
+  coast = 100;
+} else {
+  coast = 0;
+}
+console.log(coast); //0
+
+// The task 15
+// Add an expression of the inspection of the user majority, the value of the AGE parameter, in the condition for the IF instruction.
+
+// If the user is an adult, the IF block must be executed and the "You Are An Adult" string is written to the Message variable.
+// Otherwise, the ELSE block must be performed and the "You Are A Minor" string is recorded.
