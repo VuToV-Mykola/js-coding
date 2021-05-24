@@ -303,3 +303,24 @@ function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
 
   return message;
 }
+//Comparison Operators >,> =, <and <=
+
+const a = 2;
+const b = 5;
+
+console.log(a > b); // false
+console.log(b > a); // true
+console.log(a >= b); // false
+console.log(b >= a); // true
+
+// Task 13.
+// IsAdult function announces one parameter AGE (age), the value of which will be set during its call.Variable Passed Variable Expression of the User's Age Checking at Perfect.A person is considered to be adults aged 18 and older.
+
+function isAdult(age) {
+  const passed = age >= 18;
+  return passed;
+}
+isAdult(20); //true
+isAdult(14); //false
+isAdult(8); //false
+isAdult(37); //true
