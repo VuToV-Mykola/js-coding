@@ -527,3 +527,29 @@ checkPassword('mangohackzor'); // "Access denied, wrong password!"
 checkPassword(null); //"Canceled by user!"
 checkPassword('polyhax'); // "Access denied, wrong password!"
 checkPassword('jqueryismyjam'); // "Welcome!"
+
+//Task 20
+// The Checkstorage feature (Available, Ordered) checks the possibility of placing the order and returns a message on the result. It declares two parameters whose values ​​will be set during its call.
+
+// Available - Available amount of goods in stock
+// Ordered - units of goods in order
+// Using branches add function code so that:
+
+// If there are no products in the order yet, that is, the value of the order parameter is equal to 0, the MESSAGE variable is assigned a string "There Are No Products In The Order!".
+// Esley items in the order more than available goods in stock, then the MESSAGE variable is assigned a string "Your Order IS TOO LARGE, There Are Not Enough Items In Stock!".
+// Otherwise, the "The Order Is Accepted, Our Manager Will Contact You" is assigned to the Message variable.
+
+function checkStorage(available, ordered) {
+  let message;
+  // Change code below this line
+  if (ordered === 0) {
+    message = 'There are no products in the order!';
+  } else if (ordered > available) {
+    message = 'Your order is too large, there are not enough items in stock!';
+  } else {
+    message = 'The order is accepted, our manager will contact you';
+  }
+
+  // Change code above this line
+  return message;
+}
