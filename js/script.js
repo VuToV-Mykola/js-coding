@@ -536,7 +536,7 @@ checkPassword('jqueryismyjam'); // "Welcome!"
 // Using branches add function code so that:
 
 // If there are no products in the order yet, that is, the value of the order parameter is equal to 0, the MESSAGE variable is assigned a string "There Are No Products In The Order!".
-// Esley items in the order more than available goods in stock, then the MESSAGE variable is assigned a string "Your Order IS TOO LARGE, There Are Not Enough Items In Stock!".
+// if items in the order more than available goods in stock, then the MESSAGE variable is assigned a string "Your Order IS TOO LARGE, There Are Not Enough Items In Stock!".
 // Otherwise, the "The Order Is Accepted, Our Manager Will Contact You" is assigned to the Message variable.
 
 function checkStorage(available, ordered) {
@@ -553,3 +553,55 @@ function checkStorage(available, ordered) {
   // Change code above this line
   return message;
 }
+checkStorage(100, 50); // "The order is accepted, our manager will contact you"
+checkStorage(100, 130); // "Your order is too large, there are not enough items in stock!"
+checkStorage(70, 0); // "There are no products in the order!"
+checkStorage(200, 20); // "The order is accepted, our manager will contact you"
+checkStorage(200, 250); // "Your order is too large, there are not enough items in stock!"
+checkStorage(150, 0); // "There are no products in the order!"
+
+//Logical "and" (operator &&)
+const age = 20;
+console.log(age > 10 && age < 30); // true && true -> true
+
+const age = 50;
+console.log(age > 10 && age < 30); // true && false -> false
+console.log(age > 80 && age < 120); // false && true -> false
+
+console.log(true && false); // false
+console.log(false && true); // false
+console.log(true && true); // true
+
+console.log(3 && false); // false
+console.log(false && 3); // false
+console.log(3 && true); // true
+console.log(true && 3); // 3
+
+// `false`:` 0, `Nan`,` null`, `undefined`, empty line` "" `or` '' `and the value of` false`.Absolutely everything else is given to `True`.
+console.log(1 && 5); // true && true -> 5
+console.log(5 && 1); // true && true -> 1
+console.log(0 && 2); // false && true -> 0
+console.log(2 && 0); // true && false -> 0
+console.log('' && 'Манго'); // false && true -> ''
+console.log('Манго' && ''); // true && false -> ''
+console.log('Манго' && 'Поли'); // true && true -> 'Поли'
+console.log('Поли' && 'Манго'); // true && true -> 'Манго'
+
+//Task 21
+// The isNumberInRange function (Start, End, Number) checks whether the number is in the interval.It declares three parameters whose values will be set during its call:
+
+// Number - a number entry that is checked
+// Start - the beginning of a numerical interval
+// END - End of numerical gap
+// The set of an isInRange variable expressing an Number checking in the Start numerical diskette to END.That is, the number must be more either equal to Start and less or equal to END.The result of the verification expression will be the Bul True or False.
+
+function isNumberInRange(start, end, number) {
+  const isInRange = number >= start && number <= end; // Change this line
+
+  return isInRange;
+}
+
+isNumberInRange(10, 30, 17); // true
+isNumberInRange(10, 30, 5); // false
+isNumberInRange(20, 50, 24); // true
+isNumberInRange(20, 50, 76); // false
