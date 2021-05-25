@@ -484,3 +484,20 @@ makeTransaction(1000, 3, 15000); // "You ordered 3 droids, you have 12000 credit
 makeTransaction(5000, 10, 8000); // "Insufficient funds!"
 makeTransaction(2000, 8, 10000); // "Insufficient funds!"
 makeTransaction(500, 10, 5000); // "You ordered 10 droids, you have 0 credits left"
+//Block else ... if
+
+let cost;
+const subscription = 'premium';
+
+if (subscription === 'free') {
+  cost = 0;
+} else if (subscription === 'pro') {
+  cost = 100;
+} else if (subscription === 'premium') {
+  cost = 500;
+} else {
+  console.log(`Invalid subscription type - ${subscription}`);
+}
+
+console.log(cost); // 500
+//Task 19
