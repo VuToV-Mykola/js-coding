@@ -413,7 +413,9 @@ function checkAge(age) {
 function checkStorage(available, ordered) {
   let message;
   // Change code below this line
-
+  ordered <= available
+    ? 'Order is processed, our manager will contact you.'
+    : 'Not enough goods in stock!';
   // Change code above this line
   return message;
 }
