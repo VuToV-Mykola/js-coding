@@ -88,7 +88,7 @@ const topSpeed = 160;
 console.log(`🚀  ~ topSpeed`, topSpeed);
 const distance = 617.54;
 console.log(`🚀  ~ distance`, distance);
-const login = 'Mango935';
+const login = 'mango935';
 console.log(`🚀  ~ login`, login);
 const isOnline = true;
 console.log(`🚀  ~ isOnline`, isOnline);
