@@ -414,8 +414,73 @@ function checkStorage(available, ordered) {
   let message;
   // Change code below this line
   ordered <= available
-    ? 'Order is processed, our manager will contact you.'
-    : 'Not enough goods in stock!';
+    ? (message = 'Order is processed, our manager will contact you.')
+    : (message = 'Not enough goods in stock!');
   // Change code above this line
   return message;
 }
+checkStorage(100, 50); // "Order is processed, our manager will contact you."
+checkStorage(100, 130); // "Not enough goods in stock!"
+checkStorage(200, 20); // "Order is processed, our manager will contact you."
+checkStorage(200, 150); // "Order is processed, our manager will contact you."
+checkStorage(150, 180); //"Not enough goods in stock!"
+
+//Combined assignment operator
+let age = 25;
+//Classic recording
+age = age + 1;
+console.log(age); // 26
+//==========================
+let age = 25;
+// Just a more brief entry, also works
+age += 1;
+console.log(age); // 26
+//Task 17
+// Replace expressions with standard mathematics for a combined assignment operator with adding, subtraction, multiplication and division.
+let a = 5;
+let b = 10;
+let c = 15;
+let d = 20;
+
+// Change code below this line
+a += 2;
+
+b -= 4;
+
+c *= 3;
+
+d /= 10;
+//Task 18
+// Station for the sale of repair droids is ready for launch, it remains to write software for the sales department.
+
+// The MakeTransaction function (customerCredits pricePerDroid, OrderedQuantity, customerCredits) performs a transaction for the sale of droids and returns a message about the result result. It declares three parameters whose values ​​will be set during its call:
+
+// PricePerDroid - the price of one droid
+// OrderedQuantity - Number of droids ordered
+// CustomerCredits - the amount of funds on the client's account
+// Supplied to its next functionality:
+
+// Announce TotalPrice variable to store the total amount of the order and assigns it an expression of the calculation of this amount.
+// Add a check whether the client will pay for the order:
+// If the amount to payment exceeds the number of credits on the client's account, write down to the Message Variable Line "Insufficient Funds!";
+// Otherwise, deduct the purchase amount from the client's account and write to the Message variable Message: "You Ordered <Number> Droids, You Have <Number> Credits Left"
+
+function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+  let message;
+  // Change code below this line
+  const totalPrice = pricePerDroid * orderedQuantity;
+  totalPrice > customerCredits
+    ? (message = 'Insufficient funds!')
+    : (message = `You ordered ${orderedQuantity} droids, you have ${
+        customerCredits - totalPrice
+      } credits left`);
+
+  // Change code above this line
+  return message;
+}
+
+makeTransaction(3000, 5, 23000); // "You ordered 5 droids, you have 8000 credits left"
+makeTransaction(1000, 3, 15000); // "You ordered 3 droids, you have 12000 credits left"
+makeTransaction(5000, 10, 8000); // "Insufficient funds!"
+makeTransaction(2000, 8, 10000); // "Insufficient funds!"
+makeTransaction(500, 10, 5000); // "You ordered 10 droids, you have 0 credits left"
