@@ -605,3 +605,38 @@ isNumberInRange(10, 30, 17); // true
 isNumberInRange(10, 30, 5); // false
 isNumberInRange(20, 50, 24); // true
 isNumberInRange(20, 50, 76); // false
+
+//Logical "or" (operator ||)
+const age = 5;
+console.log(age < 10 || age > 30); // true || false -> true
+
+const age = 40;
+console.log(age < 10 || age > 30); // false || true -> true
+
+const age = 20;
+console.log(age < 10 || age > 30); // false || false -> false
+
+console.log(true || false); // true
+console.log(false || true); // true
+console.log(true || true); // true
+
+console.log(3 || false); // 3
+console.log(false || 3); // 3
+console.log(3 || true); // 3
+console.log(true || 3); // true
+
+//Task 22
+// The checkIfCanAccessContent (Subtype) function checks if the user can get access to content.Check occurs by the type of subscription.Only users with a writ of Pro or VIP can access.
+
+// Variable CANAccessContent Variable Expression of the subscription check.If the value of the subtype parameter is the "Pro" or "VIP" strings, the user will receive access.The result of the verification expression will be the Bul True or False.
+
+function checkIfCanAccessContent(subType) {
+  const canAccessContent = subType === 'pro' || subType === 'vip'; // Change this line
+
+  return canAccessContent;
+}
+
+checkIfCanAccessContent('pro'); // true
+checkIfCanAccessContent('starter'); // false
+checkIfCanAccessContent('vip'); // true
+checkIfCanAccessContent('free'); // false
