@@ -389,3 +389,31 @@ console.log(coast); //0
 
 // If the user is an adult, the IF block must be executed and the "You Are An Adult" string is written to the Message variable.
 // Otherwise, the ELSE block must be performed and the "You Are A Minor" string is recorded.
+function checkAge(age) {
+  let message;
+
+  if (age >= 18) {
+    // Change this line
+    message = 'You are an adult';
+  } else {
+    message = 'You are a minor';
+  }
+
+  return message;
+}
+// Task 16
+// The Checkstorage feature(Available, Ordered) checks the possibility of placing the order and returns a message on the result.It declares two parameters whose values will be set during its call:
+
+// Available - Total amount of goods in stock
+// Ordered - units of goods in order
+// Using branches add function code so that:
+
+// If the order is indicated by a number exceeding the amount of goods in stock, the "Not Enough Goods In Stock!" Is written to the Message variable.
+// Otherwise, the line "Order Is Processed, Our Manager Will Contact You.".
+function checkStorage(available, ordered) {
+  let message;
+  // Change code below this line
+
+  // Change code above this line
+  return message;
+}
