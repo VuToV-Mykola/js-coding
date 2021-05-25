@@ -500,4 +500,30 @@ if (subscription === 'free') {
 }
 
 console.log(cost); // 500
+
 //Task 19
+// The checkPassword (Password) feature receives a user password to the Password parameter, checks it on a match with the administrator password in the ADMIN_PASSWORD variable and returns a comparison result stored in the Message variable.
+
+// If the value of the Password parameter is NULL, then the user canceled the operation and the message "Canceled by User!" Is recorded in Message.
+// If the Password parameter value matches the Admin_Password value, the "Welcome!" String is assigned to the Message variable.
+// If none of the previous conditions has been executed, the "Access Denied, Wrong Password!" Row is written to the Message variable.
+function checkPassword(password) {
+  const ADMIN_PASSWORD = 'jqueryismyjam';
+  let message;
+
+  if (password === null) {
+    // Change this line
+    message = 'Canceled by user!';
+  } else if (ADMIN_PASSWORD === password) {
+    // Change this line
+    message = 'Welcome!';
+  } else {
+    message = 'Access denied, wrong password!';
+  }
+
+  return message;
+}
+checkPassword('mangohackzor'); // "Access denied, wrong password!"
+checkPassword(null); //"Canceled by user!"
+checkPassword('polyhax'); // "Access denied, wrong password!"
+checkPassword('jqueryismyjam'); // "Welcome!"
