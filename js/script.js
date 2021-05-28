@@ -640,3 +640,33 @@ checkIfCanAccessContent('pro'); // true
 checkIfCanAccessContent('starter'); // false
 checkIfCanAccessContent('vip'); // true
 checkIfCanAccessContent('free'); // false
+//!
+const result = 0;
+const getSum = (...rest) => {
+  for (const item of items) {
+    result += item;
+  }
+  return result;
+};
+const calculate = (operator, ...rest) => {
+  switch (operator) {
+    case '+':
+      return getSum();
+  }
+};
+//!CALCULATOR
+const getOperation = operator => {
+  console.log(operator);
+  switch (operator) {
+    case '+':
+      return 'Sum';
+    case '-':
+      return 'Subtract';
+    case '*':
+      return 'Multiply';
+    case '/':
+      return 'Divide';
+    case '%':
+      return 'Remainder';
+  }
+};
