@@ -1,4 +1,5 @@
 let result;
+let operation;
 const getOperation = operator => {
   switch (operator) {
     case '+':
@@ -18,7 +19,7 @@ const getSum = (operator, items) => {
   for (const item of items) {
     result += item;
   }
-  getOperation(operator);
+  getOperation(operator, operation);
 
   return { result, operation };
 };
@@ -27,7 +28,7 @@ const getSubtract = (operator, items) => {
   for (let index = 0; index < items.length; index++) {
     index > 0 ? (result -= items[index]) : (result = items[index]);
   }
-  getOperation(operator);
+  getOperation(operator, operation);
   return { result, operation };
 };
 const getMultiply = (operator, items) => {
@@ -74,7 +75,10 @@ let calculate = (operator, ...restArg) => {
       return getRemainder(operator, restArg);
   }
 };
-
+console.log(
+  `🚀 :  ~ calculate  operation : ${Object.operation} --- result : `,
+  calculate('+', 4, 5, 6, 7),
+);
 console.log(`🚀  ~ calculate `, calculate('+', 4, 5, 6, 7));
 console.log(`🚀  ~ calculate `, calculate('-', 4, 5, 6, 7));
 console.log(`🚀  ~ calculate `, calculate('*', 4, 5, 6, 7));
@@ -84,3 +88,9 @@ console.log(`🚀  ~ calculate `, calculate('%', 8, 3));
 console.log(`🚀  ~ calculate `, calculate('%', 1, 7));
 console.log(`🚀  ~ calculate `, calculate('%', 2, 7));
 console.log(`🚀  ~ calculate `, calculate('%', 3, 7));
+
+console.log(
+  'result :',
+  calculate('+', 4, 5, 6, 7),
+  `~ calculate  operation : ${operation} `,
+);
