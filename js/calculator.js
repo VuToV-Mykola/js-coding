@@ -96,6 +96,7 @@ console.log(
 );
 
 //! Guard Klause
+//Task-01
 function checkAge(age) {
   if (age >= 18) {
     // Change this line
@@ -103,4 +104,16 @@ function checkAge(age) {
   }
 
   return 'You are a minor';
+}
+//Task-02
+function checkPassword(password) {
+  const ADMIN_PASSWORD = 'jqueryismyjam';
+  // Change code below this line
+
+  if (password === ADMIN_PASSWORD) {
+    return 'Welcome!';
+  }
+  return 'Access denied, wrong password!';
+
+  // Change code above this line
 }
