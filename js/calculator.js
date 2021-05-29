@@ -128,3 +128,5 @@ function checkStorage(available, ordered) {
   }
   return 'The order is accepted, our manager will contact you';
 }
+
+const fruits = ['apple', 'plum', 'pear', 'orange'];
