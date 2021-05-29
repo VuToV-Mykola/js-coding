@@ -94,3 +94,13 @@ console.log(
   calculate('+', 4, 5, 6, 7),
   `~ calculate  operation : ${operation} `,
 );
+
+//! Guard Klause
+function checkAge(age) {
+  if (age >= 18) {
+    // Change this line
+    return 'You are an adult';
+  }
+
+  return 'You are a minor';
+}
