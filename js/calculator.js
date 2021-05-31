@@ -154,3 +154,10 @@ const fruits = ['apple', 'peach', 'pear', 'banana'];
 
 // Change code below this line
 const fruitsArrayLength = fruits.length;
+
+function formatMessage(message, maxLength) {
+  let result;
+  result =
+    message.length >= maxLength ? message.slice(0, maxLength) + '...' : message;
+}
+const a = formatMessage('Lorem ipsum dolor sit amet.', 10);
